@@ -2,7 +2,7 @@ function glacier_players:player/hunger/eat/consume/nutrition
 function glacier_players:player/hunger/eat/consume/saturation
 
 ##Indicator
-execute positioned as @s[tag=!GlacierPlayer.Drinking] run playsound entity.player.burp player @a ~ ~ ~
+execute if entity @s[tag=!GlacierPlayer.Drinking] run playsound entity.player.burp player @a ~ ~ ~
 
 ##Set eating
 scoreboard players set @s glacier_players.eating_food 0
